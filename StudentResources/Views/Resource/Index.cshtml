@@ -1,0 +1,65 @@
+﻿@model IEnumerable<StudentResources.Models.ResourceModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e0ffff;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+
+<h2>Resources</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ResourceName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResourceType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResourceAvailability)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResourceQuantity)
+        </th>>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResourceName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResourceType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResourceAvailability)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResourceQuantity)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ResourceId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ResourceId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ResourceId })
+            </td>
+        </tr>
+    }
+
+</table>
+

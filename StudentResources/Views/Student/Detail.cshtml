@@ -1,0 +1,51 @@
+﻿@model StudentResources.Models.StudentModel
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e0ffff;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<h2>Details</h2>
+
+<div>
+    <h4>StudentModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentId): @Html.DisplayFor(model => model.StudentId)
+        </dt>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName): @Html.DisplayFor(model => model.FirstName)
+        </dt>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName): @Html.DisplayFor(model => model.LastName)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email): @Html.DisplayFor(model => model.Email)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address): @Html.DisplayFor(model => model.Address)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact): @Html.DisplayFor(model => model.Contact)
+        </dt>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to data", "Index")
+
+</p>
+
