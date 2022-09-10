@@ -1,0 +1,18 @@
+Scenario 
+
+The Discipline of Information Technology in  University  would like to provide students with some study resources, e.g., iPads, Android phones, high performance computers, textbooks etc, for supporting their studies in IT courses. Current students from IT courses are able to submit a request to get relevant resources for their study in one specified unit in IT courses. Some restrictions are listed: 
+1. There are more than one IT courses in VU now, and each course has multiple units. 
+
+2. Different courses may share units. 
+
+3. Each unit has some specifications for extra resources requirements. 
+
+4. Students’ requests should be approved by the unit teacher prior to getting the resources. 
+
+5. All resources will be allocated in a first-come-first-serve priority 
+
+6. For some valuable resources, for example the high-performance computers, each student can only get one at the same time. 
+
+I am appointed as an analyst programmer to develop a web application – Study Resources Request and Allocation for IT discipline of VU. 
+
+My task is to investigate and identify potential resources through the introduction aforementioned or any other resources available online. You will design and develop a web application for the IT discipline of University that allows teachers to manage the resources and the students to request resources. The system should render course and unit details, teachers and students’ details, resources details as well as the request, allocation details and allow transaction. 
