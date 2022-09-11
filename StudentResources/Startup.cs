@@ -55,7 +55,26 @@ namespace StudentResources
                     pattern: "{controller=Request}/{action=Reequest}/{id?}");
             });
 
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Resource}/{action=Index}/{id?}");
+            });
 
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Student}/{action=Index}/{id?}");
+            });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Course}/{action=Course}/{id?}");
+            });
 
 
 
